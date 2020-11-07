@@ -53,17 +53,17 @@ async def button(bot, update: CallbackQuery):
                     except:
                         pass
                     try:
-                        await update.message.edit_text("🚦🚦 Stopped 🚦🚦")
+                        await update.message.edit_text("Stopped")
                     except:
                         pass
             else:
                 try:
-                    await update.message.edit_text("You are not allowed to do that 🤭")
+                    await update.message.edit_text("Sorry , Your Not Allowed To Do That Ask My Master :- @David9010")
                 except:
                     pass
-        elif cb_data == "fuckoff":
+        elif cb_data == "Leave For Here":
             try:
-                await update.message.edit_text("Okay! fine 🤬")
+                await update.message.edit_text("Okay! Fine")
             except:
                 pass
 				

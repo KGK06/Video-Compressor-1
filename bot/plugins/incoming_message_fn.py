@@ -262,8 +262,7 @@ async def incoming_cancel_message_f(bot, update):
     ikeyboard.append(InlineKeyboardButton("No", callback_data=("Ok , Done").encode("UTF-8")))
     inline_keyboard.append(ikeyboard)
     reply_markup = InlineKeyboardMarkup(inline_keyboard)
-    await update.reply_text("Are you sure?, reply_markup=reply_markup, quote=True)
-  else:
+    await update.reply_text("Are you sure?, It Will Stop The Compression", reply_markup=reply_markup, quote=True)
     delete_downloads()
     await bot.send_message(
       chat_id=update.chat.id,
